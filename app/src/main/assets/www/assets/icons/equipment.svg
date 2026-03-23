@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+<defs>
+  <linearGradient id="equipment_g1" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+    <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/>
+    <stop offset="1" stop-color="#000000" stop-opacity="0.12"/>
+  </linearGradient>
+  <filter id="equipment_ds" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+  </filter>
+  <filter id="equipment_glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <linearGradient id="equipment_bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#64748b"/>
+    <stop offset="1" stop-color="#0ea5e9"/>
+  </linearGradient>
+  <linearGradient id="equipment_metal" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f1f5f9"/>
+    <stop offset="1" stop-color="#94a3b8"/>
+  </linearGradient>
+  <linearGradient id="equipment_panelBlue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1d4ed8"/>
+    <stop offset="1" stop-color="#0ea5e9"/>
+  </linearGradient>
+</defs>
+
+<!-- glass squircle base -->
+<rect x="10" y="10" width="108" height="108" rx="26" fill="url(#equipment_bg)" filter="url(#equipment_ds)"/>
+<path d="M18 36 C34 20, 60 18, 92 18 C104 18, 112 22, 116 26 L116 34 C110 28, 102 24, 92 24 C60 24, 40 26, 24 40 Z" fill="white" opacity="0.22"/>
+<rect x="14" y="14" width="100" height="100" rx="24" fill="url(#equipment_g1)" opacity="0.45"/>
+
+<g filter="url(#equipment_glow)">
+  <!-- floor shadow -->
+  <ellipse cx="66" cy="98" rx="40" ry="8" fill="#0f172a" opacity="0.14"/>
+
+  <!-- TROLLEY (main) -->
+  <rect x="32" y="34" width="38" height="62" rx="6" fill="url(#equipment_metal)"/>
+  <rect x="36" y="38" width="30" height="54" rx="4" fill="url(#equipment_panelBlue)" opacity="0.95"/>
+  <rect x="36" y="38" width="30" height="16" rx="4" fill="#0b3aa5" opacity="0.35"/>
+  <!-- handle -->
+  <path d="M32 40 L26 44 L26 60" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- latch / details -->
+  <rect x="46" y="60" width="10" height="6" rx="2" fill="#e2e8f0" opacity="0.9"/>
+  <circle cx="51" cy="63" r="1.6" fill="#64748b" opacity="0.9"/>
+  <!-- wheels -->
+  <circle cx="40" cy="96" r="6" fill="#111827"/>
+  <circle cx="40" cy="96" r="2.8" fill="#9ca3af"/>
+  <circle cx="62" cy="96" r="6" fill="#111827"/>
+  <circle cx="62" cy="96" r="2.8" fill="#9ca3af"/>
+
+  <!-- SERVICE ITEMS (front) -->
+  <!-- wine glass -->
+  <path d="M84 44 C82 58, 82 64, 90 69 C98 74, 98 74, 98 86 L84 86 C84 74, 84 74, 76 69 C68 64, 70 58, 72 44 Z" fill="#ef4444" opacity="0.82"/>
+  <path d="M72 44 L84 44 L84 54 C84 58, 82 61, 78 62 C74 61, 72 58, 72 54 Z" fill="#fecaca" opacity="0.7"/>
+  <path d="M84 86 L98 86" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M91 86 L91 94" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M82 96 L100 96" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- mug -->
+  <rect x="74" y="70" width="18" height="18" rx="5" fill="#f8fafc"/>
+  <path d="M92 74 C100 74, 100 86, 92 86" stroke="#cbd5e1" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M78 74 L88 74" stroke="#ffffff" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- tea cup (small) -->
+  <rect x="96" y="72" width="16" height="12" rx="4" fill="#fff7ed" opacity="0.98"/>
+  <path d="M112 74 C118 74, 118 82, 112 82" stroke="#fed7aa" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M98 84 L110 84" stroke="#fed7aa" stroke-width="4" stroke-linecap="round"/>
+  <path d="M100 70 C100 66, 104 64, 104 60" stroke="#ffffff" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+</g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+
+<defs>
+  <linearGradient id="dry_store_g1" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+    <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/>
+    <stop offset="1" stop-color="#000000" stop-opacity="0.12"/>
+  </linearGradient>
+  <filter id="dry_store_ds" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+  </filter>
+  <filter id="dry_store_glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<defs>
+  <linearGradient id="dry_store_bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#22c55e"/>
+    <stop offset="1" stop-color="#f97316"/>
+  </linearGradient>
+</defs>
+<rect x="10" y="10" width="108" height="108" rx="26" fill="url(#dry_store_bg)" filter="url(#dry_store_ds)"/>
+<path d="M18 36 C34 20, 60 18, 92 18 C104 18, 112 22, 116 26 L116 34 C110 28, 102 24, 92 24 C60 24, 40 26, 24 40 Z" fill="white" opacity="0.22"/>
+<rect x="14" y="14" width="100" height="100" rx="24" fill="url(#dry_store_g1)" opacity="0.45"/>
+
+<g filter="url(#dry_store_glow)">
+  <rect x="36" y="40" width="22" height="58" rx="8" fill="#22c55e"/>
+  <rect x="40" y="46" width="14" height="40" rx="6" fill="#86efac" opacity="0.9"/>
+  <rect x="70" y="46" width="22" height="52" rx="8" fill="#f97316"/>
+  <rect x="74" y="52" width="14" height="34" rx="6" fill="#fdba74" opacity="0.9"/>
+  <path d="M36 42 L58 42" stroke="#14532d" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  <path d="M70 48 L92 48" stroke="#7c2d12" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+  <circle cx="47" cy="38" r="6" fill="#166534"/>
+  <circle cx="81" cy="44" r="6" fill="#9a3412"/>
+</g>
+
+</svg>

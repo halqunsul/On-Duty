@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+
+<defs>
+  <linearGradient id="bakery_g1" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+    <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/>
+    <stop offset="1" stop-color="#000000" stop-opacity="0.12"/>
+  </linearGradient>
+  <filter id="bakery_ds" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+  </filter>
+  <filter id="bakery_glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<defs>
+  <linearGradient id="bakery_bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f59e0b"/>
+    <stop offset="1" stop-color="#b45309"/>
+  </linearGradient>
+</defs>
+<rect x="10" y="10" width="108" height="108" rx="26" fill="url(#bakery_bg)" filter="url(#bakery_ds)"/>
+<path d="M18 36 C34 20, 60 18, 92 18 C104 18, 112 22, 116 26 L116 34 C110 28, 102 24, 92 24 C60 24, 40 26, 24 40 Z" fill="white" opacity="0.22"/>
+<rect x="14" y="14" width="100" height="100" rx="24" fill="url(#bakery_g1)" opacity="0.45"/>
+
+<g filter="url(#bakery_glow)">
+  <path d="M30 74 C30 54, 44 42, 64 42 C84 42, 98 54, 98 74 C98 88, 88 96, 64 96 C40 96, 30 88, 30 74 Z" fill="#d97706"/>
+  <path d="M38 72 C38 58, 48 50, 64 50 C80 50, 90 58, 90 72 C90 82, 82 88, 64 88 C46 88, 38 82, 38 72 Z" fill="#f59e0b" opacity="0.95"/>
+  <path d="M52 54 C50 64, 50 74, 52 84" stroke="#92400e" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+  <path d="M64 52 C62 64, 62 74, 64 86" stroke="#92400e" stroke-width="6" stroke-linecap="round" opacity="0.65"/>
+  <path d="M76 54 C74 64, 74 74, 76 84" stroke="#92400e" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+  <path d="M46 56 C52 52, 66 50, 78 54" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.35"/>
+</g>
+
+</svg>
